@@ -41,15 +41,34 @@ class Form extends Component {
     const { name, lastName, code, city } = this.state;
     return (
       <form onSubmit={this.onSubmit}>
-        <input type="text" name="name" value={name} onChange={this.onChange} />
         <input
+          type="text"
+          name="name"
+          value={name}
+          onChange={this.onChange}
+          placeholder="imię"
+        />
+        <input
+          placeholder="nazwisko"
           type="text"
           name="lastName"
           value={lastName}
           onChange={this.onChange}
         />
-        <input type="text" name="code" value={code} onChange={this.onChange} />
-        <input type="text" name="city" value={city} onChange={this.onChange} />
+        <input
+          placeholder="kod pocztowy"
+          type="text"
+          name="code"
+          value={code}
+          onChange={this.onChange}
+        />
+        <input
+          type="text"
+          name="city"
+          value={city}
+          onChange={this.onChange}
+          placeholder="miasto"
+        />
 
         <button type="submit">Wyślij</button>
       </form>

@@ -1,12 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./navigation.sass";
 
 function Navigation() {
   return (
-    <nav>
-      <Link to="/">Książki</Link>
-      <Link to="/basket">Koszyk</Link>
-      <Link to="/form">Formularz</Link>
+    <nav className="navigation">
+      <Link className="navigation__link" to="/">
+        Książki
+      </Link>
+      <Link className="navigation__link" to="/basket">
+        Koszyk
+      </Link>
+      <Link className="navigation__link" to="/form">
+        Formularz
+      </Link>
     </nav>
   );
 }

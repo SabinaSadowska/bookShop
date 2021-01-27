@@ -38,7 +38,7 @@ function Books(props) {
 
   return (
     <Grid className="books">
-      <Grid item xs={12} md={8} sm={10}>
+      <Grid item>
         <Typography variant="h6" className="books__title">
           Lista książek
         </Typography>
@@ -46,11 +46,15 @@ function Books(props) {
           <List className="books__list">
             {books.length
               ? books.map((el, idx) => (
-                  <ListItem key={idx}>
+                  <ListItem key={idx} className="book__list --item">
                     <ListItemText primary={el.title} />
                     <ListItemText primary={el.author} />
                     <ListItemText primary={`Liczba stron: ${el.pages}`} />
-                    <img src={el.cover_url} alt="book" />
+                    <img
+                      src={el.cover_url}
+                      alt="book"
+                      className={"book__image"}
+                    />
                     {checkType(reduceOrder(), el.id, el) ? null : (
                       <ListItemSecondaryAction>
                         <button
