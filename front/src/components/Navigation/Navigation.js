@@ -6,13 +6,13 @@ function Navigation() {
   return (
     <nav className="navigation">
       <Link className="navigation__link" to="/">
-        Książki
+        Books
       </Link>
       <Link className="navigation__link" to="/basket">
-        Koszyk
+        Cart
       </Link>
       <Link className="navigation__link" to="/form">
-        Formularz
+        Form
       </Link>
     </nav>
   );

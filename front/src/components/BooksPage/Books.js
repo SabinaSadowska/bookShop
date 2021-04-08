@@ -40,7 +40,7 @@ function Books(props) {
     <Grid className="books">
       <Grid item>
         <Typography variant="h6" className="books__title">
-          Lista książek
+          Book list
         </Typography>
         <div>
           <List className="books__list">
@@ -64,7 +64,7 @@ function Books(props) {
                             props.addToBasket(event);
                           }}
                         >
-                          Dodaj do koszyka
+                          Add to cart
                         </button>
                       </ListItemSecondaryAction>
                     )}

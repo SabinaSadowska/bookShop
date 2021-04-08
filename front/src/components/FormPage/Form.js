@@ -46,17 +46,17 @@ class Form extends Component {
           name="name"
           value={name}
           onChange={this.onChange}
-          placeholder="imię"
+          placeholder="name"
         />
         <input
-          placeholder="nazwisko"
+          placeholder="last name"
           type="text"
           name="lastName"
           value={lastName}
           onChange={this.onChange}
         />
         <input
-          placeholder="kod pocztowy"
+          placeholder="city code"
           type="text"
           name="code"
           value={code}
@@ -67,10 +67,10 @@ class Form extends Component {
           name="city"
           value={city}
           onChange={this.onChange}
-          placeholder="miasto"
+          placeholder="city"
         />
 
-        <button type="submit">Wyślij</button>
+        <button type="submit">Submit</button>
       </form>
     );
   }

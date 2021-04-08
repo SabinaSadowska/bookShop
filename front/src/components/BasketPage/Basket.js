@@ -52,7 +52,7 @@ function Basket(props) {
     <Grid item lg={10} md={10} sm={12} xs={12} className="books">
       <Grid item xs={12} md={3} sm={10}>
         <Typography variant="h6" className="books__title --red">
-          Koszyk
+          Cart
         </Typography>
         <div>
           <List className="books__list">
@@ -72,11 +72,11 @@ function Basket(props) {
                           onAlert(
                             event,
                             props.deleteFromBasket,
-                            "Usunąć książkę z koszyka??"
+                            "Remove this book from the cart??"
                           )
                         }
                       >
-                        Usuń
+                        Delete
                       </button>
                     </ListItemSecondaryAction>
                   </ListItem>
@@ -89,14 +89,14 @@ function Basket(props) {
                 onClick={() =>
                   onAlertDeleteAll(
                     props.deleteAllBasket,
-                    "Usunąć wszystkie książki z koszyka?"
+                    "Remove all books from cart?"
                   )
                 }
               >
-                Usuń wszystkie
+                Delete all
               </button>
             ) : (
-              "Twój koszyk jest pusty"
+              "Your cart is empty"
             )}
           </List>
         </div>
