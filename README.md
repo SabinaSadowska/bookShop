@@ -1,5 +1,5 @@
 # Bookshop APP
-The app render a list of books in homepage. There is also a simple menu to navigate to basket and to order form. You can add books to the basket and remove them (one or all of them) from the basket. The Redux store updates the state. Once you have an item/items in your basket you can complite the order by clicking "Formularz" in the top menu (this functionalyty doesn't work roght now). As the Redux store is keeping the basket state, once you complitetd all requested fields, click on "Wyślij" button to post the http request. 
+The app render a list of books in homepage. There is also a simple menu to navigate to basket and to order form. You can add books to the basket and remove them (one or all of them) from the basket. The Redux store updates the state. Once you have an item/items in your basket you can complite the order by clicking "Form" in the top menu (this functionalyty doesn't work right now). As the Redux store is keeping the basket state, once you complitetd all requested fields, click on "Submit" button to post the http request (this functionalyty doesn't work right now).
 
 ## To run the app follow the steps:
 
